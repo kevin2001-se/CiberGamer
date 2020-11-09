@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/Clases-css.css">
+    <link rel="stylesheet" href="css/header-menu.css">
+    <link rel="stylesheet" href="css/Fotter/fotter.css">
+    <link rel="stylesheet" href="css/carrito/carrito.css">
+    <script src="JavaScript/cdnFontAnweson.js"></script>
+    <title>CIBERGAMER</title>
+    <link rel="icon" href="/Image/icons/Icono-Logo.png">
+</head>
+
+<body>
+    <div class="header contenedor-fluido" id="header">
+        <div class="xox" style="display: none;"></div>
+        <div class="bar-top color-bar-top contenedor-fluido">
+            <div class="filas contenedor-medio">
+                <div class="redesSociales">
+                    <ul>
+                        <li>
+                            <a class="colorRedes" href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="colorRedes" href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="colorRedes" href="#">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="colorRedes" href="#">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bar-mid contenedor-fluido">
+            <div class="filas contenedor-medio justify-content-between" id="content-medio">
+                <div class="menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="menu-dezplegable">
+                    <div class="buscar">
+                        <form action="">
+                            <div class="input-buscar">
+                                <input class="ip-buscar" type="search" name="" id=""
+                                    placeholder="Busque algun Producto">
+                            </div>
+                            <div class="boton-buscar">
+                                <button type="submit">
+                                    <i class="far fa-search"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="doble-menu">
+                        <div class="info active list1" data-menu="infos">
+                            <span>Información</span>
+                        </div>
+                        <div class="categorias list2" data-menu="cate">
+                            <span>categorias</span>
+                        </div>
+                    </div>
+                    <div class="menu-info">
+                        <div class="informacion">
+                            <ul>
+                                <a href="#">
+                                    <li>Nosotros</li>
+                                </a>
+                                <a href="#">
+                                    <li>Contacto</li>
+                                </a>
+                                <a href="#">
+                                    <li>
+                                        Preguntas Frecuentes
+                                    </li>
+                                </a>
+                                <a href="#">
+                                    <li>
+                                        Login/Register
+                                    </li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="menu-cate display-none">
+                        <div class="informacion">
+                                       <ul>
+                                <!--
+                            -->
+                                <a href="Productos.html">
+                                     <li>
+                                        Todos los Productos
+                                    </li>
+                                   
+                                </a>
+                                <a href="#" class="sub-Categoria">
+                                    <li>VideoJuegos</li>
+                                    
+                                </a>
+                                <!-- Nada -->
+                                <a href="#" class="sub-Categoria">
+                                    <li>
+                                        Tarjetas
+                                    </li>
+                                    
+                                </a>
+                                <!-- Nada -->
+                                <a href="#" class="sub-Categoria">
+                                    <li>
+                                        Consolas
+                                    </li>
+                                    
+                                </a>
+                                <a href="#" class="sub-Categoria">
+                                    <li>
+                                        Accesorios
+                                    </li>
+            
+                                </a>
+                                <!-- Nada -->
+                                <a href="#">
+                                    <li>
+                                        Coleccionables
+                                    </li>
+                                    
+                                </a>
+                                <a href="#">
+                                     <li>
+                                        Por Agotarse
+                                    </li>
+                                    
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="imagen-logo">
+                    <a href="index.html"><img class="imagen-responsiva" src="Image/icons/CIBER-GAMER.png" alt=""></a>
+                </div>
+
+                <div class="carrito">
+                    <div class="user">
+                        <a href="cuenta/logeo.html" class="user_icon"><i class="far fa-user-alt"></i></a>
+                    </div>
+                    <a href="/carrito.html" class="carrito_icon"><i class="fal fa-shopping-cart"></i></a>
+                    <div class="numero-producto">1</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--
+        Conetenedor del Carrito de Compras
+    -->
+
+    <div class="site_body_carrito">
+        <div class="page-header-carrito">
+            <div class="contenedor">
+                <div class="page-header-leyenda">
+                    <a href="/index.html" class="">Home</a> / <a href="#">Carrito</a>
+                </div>
+                <div class="page-header-title">
+                    <h1>Carrito de Compras</h1>
+                </div>
+            </div>
+        </div>
+        <div class="carrito-tb d-block-pr">
+            <div class="contenedor" style="overflow: auto;">
+                <table class="carrito_table">
+                    <thead class="carrito_table_head">
+                        <tr class="cart_table-fila">
+                            <th class="cart_table-columna th-imagen">Imagen</th>
+                            <th class="cart_table-columna th-producto" style="text-align: left;">Producto</th>
+                            <th class="cart_table-columna th-precio">Precio</th>
+                            <th class="cart_table-columna th-cantidad">Cantidad</th>
+                            <th class="cart_table-columna th-total">Total</th>
+                            <th class="cart_table-columna th-cerrar"></th>
+                        </tr>
+                    </thead>
+                    <tbody class="carrito_table_body">
+                        <tr class="cart_table-fila color-tb">
+                            <td class="cart_table-columna td-tb">
+                                <div class="product-img">
+                                    <img src="Image/Productos/mariodeluxe.jpg" alt="">
+                                </div>
+                            </td>
+                            <td class="cart_table-columna td-tb td-producto">
+                                <p>Super Mario Deluxer 4</p>
+                                <ul>
+                                    <li>Categoria: VideoJuegos</li>
+                                    <li>Tipo: PS4</li>
+                                </ul>
+                            </td>
+                            <td class="cart_table-columna td-tb td-precio">S/.320.12</td>
+                            <td class="cart_table-columna td-tb">
+                                <div class="input_cantidad">
+                                    <input type="number" name="" id="" min="1" value="2">
+                                </div>
+                            </td>
+                            <td class="cart_table-columna td-tb td-precio">S/.
+                                <script>document.write(320.12 * 2);</script>
+                            </td>
+                            <td class="cart_table-columna td-tb remove">
+                                <button class="remover-producto-carrito">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="cart_table-fila color-tb">
+                            <td class="cart_table-columna td-tb">
+                                <div class="product-img">
+                                    <img src="Image/Productos/pes2021.jpg" alt="">
+                                </div>
+                            </td>
+                            <td class="cart_table-columna td-tb td-producto">
+                                <p>Pro Evolution Soccer 2021 Season Update</p>
+                                <ul>
+                                    <li>VideoJuegos</li>
+                                    <li>Tipo: Steam</li>
+                                </ul>
+                            </td>
+                            <td class="cart_table-columna td-tb td-precio">S/.320.12</td>
+                            <td class="cart_table-columna td-tb">
+                                <input type="number" name="" id="" min="1" value="2">
+                            </td>
+                            <td class="cart_table-columna td-tb td-precio">S/.
+                                <script>document.write(320.12 * 2);</script>
+                            </td>
+                            <td class="cart_table-columna td-tb remove">
+                                <button class="remover-producto-carrito">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="cart_table-fila color-tb">
+                            <td class="cart_table-columna td-tb">
+                                <div class="product-img">
+                                    <img src="Image/Productos/uncharted4.jpg" alt="">
+                                </div>
+                            </td>
+                            <td class="cart_table-columna td-tb td-producto">
+                                <p>Uncharted 4</p>
+                                <ul>
+                                    <li>VideoJuegos</li>
+                                    <li>Tipo: PS4</li>
+                                </ul>
+                            </td>
+                            <td class="cart_table-columna td-tb td-precio">S/.320.12</td>
+                            <td class="cart_table-columna td-tb">
+                                <input type="number" name="" id="" min="1" value="2">
+                            </td>
+                            <td class="cart_table-columna td-tb td-precio">S/.
+                                <script>document.write(320.12 * 2);</script>
+                            </td>
+                            <td class="cart_table-columna td-tb remove">
+                                <button class="remover-producto-carrito">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="contenedor">
+                <div class="carrito_acciones">
+                    <div class="carrito_seguir">
+                        <div class="pad-seguir">
+                            <a href="/Productos.html">Seguir Comprando</a>
+                        </div>
+                    </div>
+                    <div class="carrito_proceso">
+                        <div class="card-proceso">
+                            <div class="body-card-proceso">
+                                <h3 class="title-card-procesa">Total Carrito</h3>
+                                <table class="total-table">
+                                    <thead class="cart-total-header">
+                                        <tr>
+                                            <td>Subtotal</td>
+                                            <td>S/.5000.02</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="cart-total-body">
+                                        <tr>
+                                            <td>Delivery</td>
+                                            <td>S/.10.00</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot class="cart-total-foot">
+                                        <tr>
+                                            <td>Total</td>
+                                            <td>S/.10.00</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                                <a href="#" class="btn-Proceso-compra">Proceder al Pago</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--
+        Contenedor Footer
+    -->
+
+    <footer class="contenedor-fluido">
+        <div class="main-content contenedor">
+            <div class="left box">
+                <h2>
+                    NOSOTROS</h2>
+                <div class="content">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, at qui laudantium inventore
+                        dolorem non odio omnis aspernatur quo error porro officiis excepturi laborum incidunt vero, quod
+                        ea deserunt obcaecati.</p>
+                    <div class="social">
+                        <a class="colorRedes" href="#"><span class="fab fa-facebook-f"></span></a>
+                        <a class="colorRedes" href="#"><span class="fab fa-instagram"></span></a>
+                        <a class="colorRedes" href="#"><span class="fab fa-whatsapp"></span></a>
+                        <a class="colorRedes" href="#"><span class="fab fa-github"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="center box">
+                <h2>
+                    Address</h2>
+                <div class="content">
+                    <div class="place">
+                        <div class="fass"><span class="fas fa-map-marker-alt"></span></div>
+                        <span class="text">Lima, Perú</span>
+                    </div>
+                    <div class="phone">
+                        <div class="fass"><span class="fas fa-phone-alt"></span></div>
+                        <span class="text">+051-765432100</span>
+                    </div>
+                    <div class="email">
+                        <div class="fass"><span class="fas fa-envelope"></span></div>
+                        <span class="text">abc@example.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="right box">
+                <h2>
+                    ContacTANOS</h2>
+                <div class="content">
+                    <form action="#">
+                        <div class="email">
+                            <div class="text">
+                                Email *</div>
+                            <input type="email" required>
+                        </div>
+                        <div class="msg">
+                            <div class="text">
+                                Message *</div>
+                            <!-- NOTE: Due to more textarea tag I got an error. So I changed the textarea name to changeit. Please change that changeit name to textarea -->
+                            <textarea class="msgForm" rows="3" cols="25" required></textarea>
+                            <!-- replace this changeit name to textarea -->
+                        </div>
+                        <div class="btn">
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <center>
+                <span class="credit">Creado por <a href="#">CiberGamer</a>
+                    | </span>
+                <span class="far fa-copyright"></span> 2020 Todos los Derechos Reservados.
+            </center>
+        </div>
+    </footer>
+
+    <!--
+        Archivos JavaScripts
+    -->
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="/plugins/FlexSlides/jquery.flexisel.js"></script>
+    <script src="/JavaScript/index-js.js"></script>
+    <script src="/JavaScript/validacion.js"></script>
+    <script src="JavaScript/bootstrap-input-spinner.js"></script>
+</body>
+
+</html>
+
+<script>
+    $("input[type='number']").inputSpinner()
+</script>

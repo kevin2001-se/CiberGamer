@@ -1,0 +1,447 @@
+@import "Fotter/fotter.css";
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/*BANNER*/
+.banner {
+  background-image: url("../Image/index/Banner\ 1-2.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+.banner .padding-banner {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+.banner .padding-banner .margin-banner {
+  /*margin: 0 10rem;*/
+  margin-right: 45rem;
+}
+.texto-banner {
+  text-align: start;
+  text-transform: uppercase;
+  color: white;
+  font-size: 1.4em;
+  line-height: 65px;
+}
+.texto-banner p {
+  line-height: 40px;
+}
+.gift-card {
+  padding: 20px 40px;
+  font-size: 0.9em;
+  background-color: transparent;
+  border: 4px solid #ffffff;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 8px;
+}
+/*=================================
+    Ofertas
+===========================*/
+
+.ofertas-Productos {
+  display: block;
+}
+.oferta {
+  justify-content: center;
+  margin: 5px 0px;
+  flex-wrap: wrap;
+  margin-bottom: 8vh;
+}
+.oferta-1,
+.oferta-2,
+.oferta-3 {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 12px 0px;
+  overflow: hidden;
+}
+.imagen1,
+.imagen2,
+.imagen3 {
+  width: 100%;
+  height: 100%;
+  transition: all ease 0.6s;
+}
+.imagen1:hover,
+.imagen2:hover,
+.imagen3:hover {
+  transform: scale(1.1);
+}
+/*=================================
+    carrousel Producto
+===========================*/
+.carousel-productos {
+  display: block;
+  position: relative;
+  margin-bottom: 11vh;
+}
+.padding-carousel .title {
+  width: 100%;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-weight: 800;
+  color: #3d464d;
+  margin-bottom: 3vh;
+}
+.padding-carousel .title h2 {
+  padding-bottom: 13px;
+  position: relative;
+  width: 100%;
+}
+.padding-carousel .title h2::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #014aca;
+  display: block;
+  left: 0;
+  bottom: -3px;
+  z-index: -1;
+}
+hr {
+  color: #e2e2e2;
+  border: 0.4px solid;
+  height: 0px;
+  width: 100%;
+  position: absolute;
+  z-index: -2;
+}
+
+.card-producto {
+  width: 100%;
+  height: auto;
+  max-width: 244.4px;
+  overflow: hidden;
+}
+.imagen-producto {
+  max-width: 100%;
+  height: 200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+.detalle {
+  position: absolute;
+  width: 80px;
+  background-color: #fff;
+  height: 50px;
+  font-size: 25px;
+  top: 50%;
+  right: -105px;
+  transform: translateY(-35%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all linear 0.3s;
+  box-shadow: 0px 0px 17px 4px #00000096;
+}
+.imagen-producto:hover .detalle {
+  right: 0px;
+}
+.detalle a {
+  color: #2e2e2e;
+}
+.imagen-producto img {
+  width: 100%;
+  height: 100%;
+}
+.nombre-producto {
+  display: block;
+  text-align: center;
+  padding: 5px 25px;
+  color: #3d464d;;
+  font-weight: 700;
+}
+.card-producto p {
+  margin-bottom: 0px !important;
+}
+.precio-producto {
+  text-align: center;
+  font-weight: 700;
+  color: #0d3d8a;
+  padding: 5px 0px;
+  font-size: 15px;
+}
+.anadir-carrito {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.anadir-carrito button {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #ff6200;
+  border: 0;
+  color: white;
+  position: relative;
+  transition: all linear 0.3s;
+}
+.anadir-carrito button:hover {
+  background-color: #0d3d8a;
+}
+.pre-a {
+  text-decoration: line-through;
+  color: #a8a8a8;
+}
+
+.flex-marca{
+  margin-bottom: 5vh;
+
+}
+
+.flex-marca .nbs-flexisel-nav-left,
+.flex-marca .nbs-flexisel-nav-right{
+  display: none;
+}
+
+/*=================================
+    Media Querys
+===========================*/
+@media (max-width: 419.98px) {
+  .justify-content-between {
+    justify-content: space-around;
+  }
+  .banner {
+    background-image: url("../Image/index/Banner\ 1.jpg");
+  }
+  .banner .padding-banner {
+    padding-top: 5rem;
+    padding-bottom: 15rem;
+  }
+  .banner .padding-banner .margin-banner {
+    margin-right: 0rem;
+    margin: 0;
+  }
+  .texto-banner {
+    text-align: center;
+  }
+  .padding-carousel .title h2 {
+    padding-bottom: 13px;
+    position: relative;
+    width: 100%;
+  }
+}
+@media (min-width: 420px) and (max-width: 575.98px) {
+  .justify-content-between {
+    justify-content: space-around;
+  }
+  .banner {
+    background-image: url("../Image/index/Banner\ 1.jpg");
+  }
+  .banner .padding-banner {
+    padding-top: 5rem;
+    padding-bottom: 15rem;
+  }
+  .banner .padding-banner .margin-banner {
+    margin-right: 0rem;
+    margin: 0;
+  }
+  .texto-banner {
+    text-align: center;
+  }
+  .oferta-1,
+  .oferta-2,
+  .oferta-3 {
+    margin: 12px 12px;
+  }
+  .padding-carousel .title h2 {
+    padding-bottom: 13px;
+    position: relative;
+    width: 425px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .justify-content-between {
+    justify-content: space-around;
+  }
+  .banner {
+    background-image: url("../Image/index/Banner\ 1-3.jpg");
+  }
+  .banner .padding-banner {
+    padding-top: 5rem;
+    padding-bottom: 18rem;
+  }
+  .banner .padding-banner .margin-banner {
+    margin-right: 0rem;
+    margin: 0;
+  }
+  .texto-banner {
+    text-align: center;
+  }
+  .justify-content-between {
+    justify-content: space-around;
+  }
+  .imagen-logo {
+    width: 100%;
+    max-width: 220px;
+  }
+  .numero-producto {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #014aca;
+    border-radius: 50%;
+    top: 0%;
+    right: -5%;
+    color: #ffffff;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .oferta-1,
+  .oferta-2,
+  .oferta-3 {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    margin: 12px;
+    overflow: hidden;
+  }
+  .padding-carousel .title h2 {
+    padding-bottom: 13px;
+    position: relative;
+    width: 425px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .oferta {
+    justify-content: space-around;
+  }
+  .oferta-1,
+  .oferta-2,
+  .oferta-3 {
+    max-width: 306px;
+  }
+  .justify-content-between {
+    justify-content: space-around;
+  }
+  .banner {
+    background-image: url("../Image/index/Banner\ 1-3.jpg");
+  }
+  .banner .padding-banner {
+    padding-top: 7rem;
+    padding-bottom: 18rem;
+  }
+  .banner .padding-banner .margin-banner {
+    margin-right: 0rem;
+    margin: 0;
+  }
+  .texto-banner {
+    text-align: center;
+  }
+  .imagen-logo {
+    width: 100%;
+    max-width: 220px;
+  }
+  .numero-producto {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #014aca;
+    border-radius: 50%;
+    top: 15%;
+    right: -25%;
+    color: #ffffff;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .padding-carousel .title h2 {
+    padding-bottom: 13px;
+    position: relative;
+    width: 425px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .oferta {
+    justify-content: space-around;
+  }
+  .imagen-logo {
+    width: 100%;
+    max-width: 250px;
+  }
+  .numero-producto {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #014aca;
+    border-radius: 50%;
+    top: 20%;
+    right: -25%;
+    color: #ffffff;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .oferta-1,
+  .oferta-2,
+  .oferta-3 {
+    max-width: 346px;
+    margin: 12px;
+  }
+  .padding-carousel .title h2 {
+    padding-bottom: 13px;
+    position: relative;
+    width: 425px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .oferta-1,
+  .oferta-2,
+  .oferta-3 {
+    max-width: 376px;
+    margin: 12px 0;
+  }
+  .oferta {
+    justify-content: space-between;
+  }
+  .imagen-logo {
+    width: 100%;
+    max-width: 250px;
+  }
+  .numero-producto {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #014aca;
+    border-radius: 50%;
+    top: 18%;
+    right: -25%;
+    color: #ffffff;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .filas {
+    padding: 0;
+  }
+  .padding-carousel .title h2 {
+    padding-bottom: 13px;
+    position: relative;
+    width: 425px;
+    margin: auto;
+  }
+}

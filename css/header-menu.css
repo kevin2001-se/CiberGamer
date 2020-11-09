@@ -1,0 +1,312 @@
+.header {
+    display: block;
+    width: 100%;
+    position: sticky;
+    background-color: #fff;
+    top: 0;
+    z-index: 1;
+  }
+  .header .bar-top {
+    position: relative;
+    color: white;
+    height: auto;
+  }
+  .header .color-bar-top {
+    background-color: #0d3d8a;
+  }
+  .redesSociales {
+    width: 100%;
+    display: block;
+    padding: 5px 0px;
+  }
+  .redesSociales ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .redesSociales ul li {
+    font-size: 20px;
+    margin: 0px 10px;
+  }
+  .colorRedes {
+    color: #ffffff;
+    cursor: pointer;
+    transition: all ease 0.4s;
+  }
+  .colorRedes:hover {
+    color: #d4af37;
+  }
+  .header .bar-mid {
+    position: relative;
+    display: block;
+    height: auto;
+    padding: 8px 0;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  }
+  .imagen-logo {
+    width: 100%;
+    max-width: 170px;
+  }
+  .carrito,
+  .menu,user {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    cursor: pointer;
+    transition: all ease 0.4s;
+  }
+  .menu {
+    color: #0d3d8a;
+  }
+  .carrito {
+    padding-right: 10px;
+  }
+  .carrito .carrito_icon {
+    color: #0d3d8a;
+  }
+  .carrito .carrito_icon:hover,
+  .menu:hover,.user a:hover {
+    color: #d45637;
+  }
+  .carrito .carrito_icon:hover {
+    transform: rotate(350deg);
+  }
+  .carrito .carrito_icon:hover ~ .numero-producto {
+    top: 13%;
+    right: -20%;
+    background-color: #d45637;
+  }
+  .user{
+    margin-right: 20px;
+    position: absolute;
+    left: -50px;
+    display: block;
+  }
+  .user a{
+    color: #0d3d8a;
+  }
+  .numero-producto {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #014aca;
+    border-radius: 50%;
+    top: 10%;
+    right: -14%;
+    color: #ffffff;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .display-block {
+    display: block !important;
+  }
+  .display-none {
+    display: none;
+  }
+  /*=================================
+      MENU DEZPLEGABLE
+  ===========================*/
+  
+  .menu-dezplegable {
+    position: fixed;
+    width: 300px;
+    background-color: #ffffff;
+    height: 100%;
+    top: 0;
+    left: -1000px;
+    z-index: 1;
+    overflow-y: auto;
+    box-shadow: 1px -2px 20px 6px #828282;
+    transition: all ease 0.6s;
+  }
+  .cerrar {
+    position: absolute;
+    display: inline;
+    color: #014aca;
+    font-size: 30px;
+    top: 15px;
+    right: 25px;
+    cursor: pointer;
+  }
+  .buscar form {
+    width: 100%;
+    display: block;
+    height: auto;
+    padding: 20px 10px;
+    margin-top: 40px;
+    border-top: 1px solid rgba(129, 129, 129, 0.2);
+  }
+  .input-buscar,
+  .boton-buscar {
+    display: inline-block;
+  }
+  .input-buscar {
+    width: 240px;
+  }
+  .input-buscar .ip-buscar {
+    padding: 8px;
+    width: 100%;
+    outline: none;
+    border: 0;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .boton-buscar button {
+    font-size: 22px;
+    color: #767676;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+  }
+  .boton-buscar button svg {
+    position: absolute;
+    top: -15px;
+  }
+  .doble-menu {
+    position: relative;
+    width: 100%;
+    padding: 0px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-bottom: 1px solid rgba(129, 129, 129, 0.2);
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+  
+  .info,
+  .categorias {
+    font-weight: 600;
+    color: #767676;
+    height: 60px;
+    width: 50%;
+    text-align: center;
+    line-height: 60px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .active::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50%;
+    height: 2px;
+    background-color: #014aca;
+    bottom: 0;
+    transition: width ease 0.7s;
+  }
+  .informacion,
+  .informacion ul {
+    width: 100%;
+  }
+  .informacion a {
+    color: #706f6f;
+  }
+  .informacion ul a li {
+    width: 100%;
+    padding: 20px 10px;
+    cursor: pointer;
+    transition: all ease 0.3s;
+    border-bottom: 1px solid rgba(129, 129, 129, 0.2);
+  }
+  .informacion ul a li:hover {
+    background-color: #e6e6e6;
+  }
+  .cerrar-menu {
+    position: absolute;
+    font-size: 30px;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    cursor: pointer;
+  }
+  .sub-Categoria {
+    width: 100%;
+    display: flex;
+    /* padding: 20px 10px; */
+    border-bottom: 1px solid rgba(129, 129, 129, 0.2);
+  }
+  .icon-tect:hover {
+    background-color: #e6e6e6;
+  }
+  .icon-tect {
+    width: 100%;
+    font-size: 35px;
+    max-width: 55px;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid rgba(129, 129, 129, 0.2);
+  }
+  .sub-cate {
+    border-bottom: 1px solid rgba(129, 129, 129, 0.2);
+    overflow: hidden;
+    background-color: rgba(202, 203, 203, 0.25);
+    display: block;
+  }
+  .sub-cate a li {
+    padding-left: 18px !important;
+  }
+  /*=================================
+    Media Querys
+===========================*/
+@media (max-width: 419.98px) {
+    .justify-content-between {
+      justify-content: space-around;
+    }
+  }
+  @media (min-width: 420px) and (max-width: 575.98px) {
+    .justify-content-between {
+      justify-content: space-around;
+    }
+  }
+  
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .justify-content-between {
+      justify-content: space-around;
+    }
+    .justify-content-between {
+      justify-content: space-around;
+    }
+    .imagen-logo {
+      width: 100%;
+      max-width: 220px;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .justify-content-between {
+      justify-content: space-around;
+    }
+    .imagen-logo {
+      width: 100%;
+      max-width: 220px;
+    }
+  }
+  
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    .imagen-logo {
+      width: 100%;
+      max-width: 250px;
+    }
+    .justify-content-between {
+        justify-content: space-around;
+      }
+  }
+  
+  @media (min-width: 1200px) {
+    .justify-content-between {
+        justify-content: space-between;
+      }
+    .imagen-logo {
+      width: 100%;
+      max-width: 250px;
+    }
+  }
+  
