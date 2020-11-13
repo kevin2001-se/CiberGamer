@@ -17,11 +17,19 @@
 .categoria_producto {
   width: 100%;
   max-width: 250px;
-  border: 2px solid #ebebeb;
   margin: 0px 25px 0px 0px;
   margin-top: 10px !important;
-  padding: 20px;
   align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+.columna-1, .columna-2{
+  position: relative;
+  display: block;
+  width: 100%;
+  border: 2px solid #ebebeb;
+  padding: 20px 8px;
+  margin: auto;
 }
 .content_card_producto {
   width: 100%;
@@ -32,29 +40,89 @@
 .padding_producto {
   padding: 30px 15px;
 }
-.title-cate {
+.title-cate, .title-prd {
   font-size: 25px;
   font-weight: 600;
   color: #3d464d;
 }
+.title-cate{
+  color: #ffffff;
+  background-color: #3d464d;
+  cursor: pointer;
+}
+.list_categoria{
+  position: relative;
+  display: block;
+  width: 100%;
+  border: 2px solid #ebebeb;
+  border-top: 0;
+  padding: 0px 8px;
+  margin: auto;
+}
 .space {
-  padding: 5px;
+  padding: 0.2rem;
 }
 .list_categorias {
   width: 100%;
+  display: none;
 }
 .list_categorias li {
-  padding: 13px 0px;
+  padding: 18px 0px;
   width: 100%;
 }
 .list_categorias li a {
   text-decoration: none;
   color: #434343;
   font-size: 17px;
+
 }
 .list_categorias li a:hover {
   color: #434343;
   font-weight: 700;
+}
+
+.body_prd{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.title-prd{
+  text-align: center;
+}
+
+.list_prd{
+  width: 100% !important;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  align-items: center;
+  border-bottom: none;
+}
+.list_prd:not(:nth-last-child(1)){
+  border-bottom: 2px solid #ebebeb;
+}
+.item_prd_img{
+  width: 100%;
+  max-width: 74px;
+  margin: auto;
+  margin-right: 10px;
+  padding: 5px;
+}
+.item_prd_img a img{
+  max-width: 100%;
+}
+
+.item_prd_title{
+  width: 100%;
+  margin: auto;
+  font-size: 12px;
+}
+.item_prd_title a{
+  color: #3d464d;
+}
+.item_prd_title a span{
+  font-weight: 600;
 }
 
 .top_card_producto {
@@ -91,10 +159,9 @@
 .card-producto {
   width: 100%;
   height: auto;
-  max-width: 275.4px;
+  max-width: 265.4px;
   overflow: hidden;
-  padding: 10px 0px;
-  border: 1px solid #ebebeb;
+  box-shadow: 0 0 8px 0px #bfb8b8;
   margin-bottom: 15px;
   border-radius: 3px;
 }
@@ -104,6 +171,14 @@
   display: block;
   overflow: hidden;
   position: relative;
+  margin-top: 10px;
+}
+.desp_pro{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .detalle {
   position: absolute;
@@ -152,6 +227,8 @@
   width: 100%;
 }
 .anadir-carrito button {
+  display: block;
+  width: 100%;
   padding: 10px 20px;
   cursor: pointer;
   background-color: #ff6200;
