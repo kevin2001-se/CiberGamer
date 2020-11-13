@@ -50,7 +50,7 @@ $(document).ready(function () {
     $("#flexiselDemo3").flexisel({
         visibleItems: 5,
         itemsToScroll: 1,
-        navigationTargetSelector: null,  
+        navigationTargetSelector: null,
         autoPlay: {
             enable: false,
             interval: 6000,
@@ -60,7 +60,7 @@ $(document).ready(function () {
     $("#flexiselDemo2").flexisel({
         visibleItems: 5,
         itemsToScroll: 1,
-        navigationTargetSelector: null,  
+        navigationTargetSelector: null,
         autoPlay: {
             enable: false,
             interval: 6000,
@@ -79,11 +79,15 @@ $(document).ready(function () {
     $("#flexiselDemo4").flexisel({
         visibleItems: 5,
         itemsToScroll: 1,
-        navigationTargetSelector: null,     
+        navigationTargetSelector: null,
         autoPlay: {
             enable: true,
             interval: 4000,
             pauseOnHover: true
-        }       
+        }
     });
+})
+
+$("#categoria_sli").click(function () {
+    $(".list_categorias").slideToggle();
 })

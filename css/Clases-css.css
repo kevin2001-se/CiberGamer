@@ -106,6 +106,19 @@ ol {
   font-weight: 700 !important;
   box-shadow: 0 0 9px 0px #948383 !important;
 }
+.pro-slider .nbs-flexisel-item {
+  float: left;
+  padding: 0px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 0 10px !important;
+  width: 244.4px !important;
+}
+.nbs-flexisel-item img {
+    margin-top: 0 !important;
+}
 @media (max-width: 575.98px) {
   .contenedor,
   .contenedor-pequeño,
